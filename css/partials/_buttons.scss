@@ -16,6 +16,10 @@
       text-decoration: none;
     }
 
+    &.btn-color {
+      background: $color-primary;
+    }
+
     &-outline {
       background: transparent;
       border: 2px solid black;
@@ -42,6 +46,10 @@
       text-decoration: none;
     }
 
+    &.btn-color {
+      background: $color-secondary;
+    }
+
     &-outline {
       background: transparent;
       border: 2px solid white;
@@ -61,6 +69,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 20px;
 
     .btn {
       margin-right: 20px;
