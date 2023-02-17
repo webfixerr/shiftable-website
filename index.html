@@ -11,19 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <nav>
         <div class="container">
-            <a href="/"><img src="/img/logo-large.svg" alt="Shiftable"></a>
-            <button class="btn btn-primary"><a href="/">Download App</a></button>
+            <a href="/"><img src="img/logo-large.svg" alt="Shiftable" class="logo"></a>
+            <div>
+                <button class="btn btn-primary downloadapp"><span><span class="text">Download App</span> <span><img src="img/download-icon.png" alt=""></span> </span></button>
+                <button class="btn btn-primary-outline menu-icon"><a href="javascript:void(0);"  onclick="myFunction()"><img src="img/menu-icon.svg" alt=""></a></button>
+                <div id="myLinks" class="menuOuter">
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                  </div>
+            </div>
         </div>
     </nav>
     <div class="hero">
         <div class="container">
-            <h1 data-aos="zoom-out">Shaping the future of <span>dental temping.</span></h1>
+            <h1 data-aos="zoom-out">Shaping the future of <span>dental </span>temping.</h1>
             <p data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">Connecting dental practices &
                 professionals with the tap of an app.
                 Hire better, earn more, and build connections with your dental community with zero initial fees.</p>
@@ -38,7 +46,8 @@
                 <h2 data-aos="zoom-out">For the dental community, from the dental community.</h2>
                 <p data-aos="zoom-out">Connecting dental professionals with dental practices for an effortless temping
                     experience.</p>
-                <img src="/img/phone.png" class="support-img" alt="shiftable app preview">
+                <img src="img/phone.png" class="support-img" alt="shiftable app preview">
+                <img src="img/phone-mobile.png" class="support-img mobile-support-img" alt="shiftable app preview">
             </article>
             <article class="el-2 text-el" data-aos="fade-up">
                 <div>
@@ -97,15 +106,73 @@
                 </p>
             </article>
         </section>
-        <section id="home__howitworks" class="image-section" data-image="bg-color.png">
+
+        <section id="home__solutionMobile">
+                <div class="el-1">
+                        <h2 data-aos="zoom-out">Meet the New Way Of Dental Temping</h2>  
+                        <img src="img/solution-mobile-1.jpg" class="" alt="">
+                </div>
+
+                <div class="el-2">
+                    <h2 data-aos="zoom-out">Meet the New Way 
+                        Of Dental Temping</h2>  
+                    <p data-aos="zoom-out">Substitute your workload and supercharge your team with Shiftable’s reliable Temping Professionals.</p>
+                </div>
+
+                <div class="el-2 text-el--dark">
+                    <h2 data-aos="zoom-out">Hire Better. And Faster.</h2>  
+                    <p data-aos="zoom-out">Easy and intuitive booking in seconds. Anytime. Anywhere.</p>
+                </div>
+        </section>
+        <section id="home__zerocost">
+            <article class="el-1" data-aos="fade-up" style="background-image: url('img/image5.png');"></article>
+            <article class="el-2 text-el text-el--dark" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <h3 data-aos="zoom-out">Start Your Shiftable Journey at Zero Initial Cost</h3>
+                    <p data-aos="zoom-out">Take advantage of our pre-launch phase and enjoy FREE complimentary access to
+                        all of Shiftable's platform services. After June 25th, dental practices will be charged a
+                        nominal fee of $10 CAD to post positions,
+                        but rest assured that temps who comply with our standards will continue to have free access to
+                        our platform.</p>
+                </div>
+                <div class="btn-list">
+                    <button class="btn btn-secondary" data-aos="zoom-out"><a href="/">Apply Now</a></button>
+                </div>
+            </article>
+            <article class="el-3" data-aos="fade-up" style="background-image: url('img/image6.png');"></article>
+            <article class="el-4" data-aos="fade-up" style="background-image: url('img/image7.png');"></article>
+        </section>
+
+        <!-- home zerocost mobile -->
+        <section id="home__zerocostMobile">
+                    <div>
+                            <img src="img/zerocost-mobile.jpg" alt="">
+                    </div>
+                    <div class="el-2 text-el--dark">
+                        <h2 data-aos="zoom-out">Begin your journey with Shiftable at zero initial cost</h2>  
+                        <p data-aos="zoom-out">Since we are still in our Pre-launch phase, you get access to all SHIFTABLE platform services for FREE. After 25th June 2023, dental practices will be charged a nominal posting fee of CAD $10.</p>
+                        <div class="btn-list">
+                            <button class="btn btn-secondary aos-init aos-animate" data-aos="zoom-out"><a href="/">Apply Now</a></button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="el-3">
+                            <div> <img src="img/image6.png" alt=""> </div>
+                            <div> <img src="img/image7.png" alt=""></div>
+                    </div>
+        
+        </section>
+
+        <section id="home__howitworks" class="image-section" data-image="image11.jpg">
             <article class="el-1 text-el text-el--dark" data-aos="fade-up">
                 <h2 data-aos="zoom-out">How Shiftable works?</h2>
                 <p data-aos="zoom-out">We connect professional Dental Hygienists & Assistants with thriving Dental
                     Practices quickly and seamlessly.</p>
             </article>
             <article class="el-2" data-aos="fade-up" data-aos-delay="100"
-                style="background-image: url('/img/image6.png');"></article>
-            <article class="el-3 tab-container" data-aos="fade-up">
+                ></article>
+            <article class="el-3 tab-container" data-aos="fade-up" >
                 <ul class="tabs-list">
                     <li class="tab active" data-tab="1">
                         <h3>Dental Practices</h3>
@@ -144,23 +211,56 @@
                 </ul>
             </article>
         </section>
-        <section id="home__zerocost">
-            <article class="el-1" data-aos="fade-up" style="background-image: url('/img/image5.png');"></article>
-            <article class="el-2 text-el text-el--dark" data-aos="fade-up" data-aos-delay="100">
-                <div>
-                    <h3 data-aos="zoom-out">Start Your Shiftable Journey at Zero Initial Cost</h3>
-                    <p data-aos="zoom-out">Take advantage of our pre-launch phase and enjoy FREE complimentary access to
-                        all of Shiftable's platform services. After June 25th, dental practices will be charged a
-                        nominal fee of $10 CAD to post positions,
-                        but rest assured that temps who comply with our standards will continue to have free access to
-                        our platform.</p>
-                </div>
-                <div class="btn-list">
-                    <button class="btn btn-secondary" data-aos="zoom-out"><a href="/">Apply Now</a></button>
-                </div>
-            </article>
-            <article class="el-3" data-aos="fade-up" style="background-image: url('/img/image6.png');"></article>
-            <article class="el-4" data-aos="fade-up" style="background-image: url('/img/image7.png');"></article>
+        <section id="home__howitworksMobile" >
+            <div class="el-2" data-aos="fade-up" data-aos-delay="100"
+            >
+                <img src="img/image11-mobile.jpg" alt="">
+        </div>
+        <div class="el-1 text-el text-el--dark" data-aos="fade-up">
+            <h2 data-aos="zoom-out">How Shiftable works?</h2>
+            <p data-aos="zoom-out">We connect professional Dental Hygienists & Assistants with thriving Dental
+                Practices quickly and seamlessly.</p>
+        </div>
+
+        <article class="el-3 tab-container" data-aos="fade-up" >
+            <ul class="tabs-list">
+                <li class="tab active" data-tab="1">
+                    <h3>Dental Practices</h3>
+                </li>
+                <li class="tab" data-tab="2">
+                    <h3>Dental Professionals</h3>
+                </li>
+            </ul>
+            <ul class="cards active" data-tab="1">
+                <li>
+                    <h3>Get the App</h3>
+                    <p>Download The App and Register Your Practice in Seconds. From Playstore & Appstore</p>
+                </li>
+                <li>
+                    <h3>Post your Job</h3>
+                    <p>Download The App and Register Your Practice in Seconds. From Playstore & Appstore</p>
+                </li>
+                <li>
+                    <h3>Get Candidates</h3>
+                    <p>Download The App and Register Your Practice in Seconds. From Playstore & Appstore</p>
+                </li>
+            </ul>
+            <ul class="cards" data-tab="2">
+                <li>
+                    <h3>Get the App</h3>
+                    <p>Download The App and Register Your Practice in Seconds. From Playstore & Appstore</p>
+                </li>
+                <li>
+                    <h3>Pick a Shift</h3>
+                    <p>Download The App and Register Your Practice in Seconds. From Playstore & Appstore</p>
+                </li>
+                <li>
+                    <h3>Get Paid</h3>
+                    <p>Download The App and Register Your Practice in Seconds. From Playstore & Appstore</p>
+                </li>
+            </ul>
+        </article>
+
         </section>
         <section id="home__amazon-credits">
             <!-- <article class="el-1 text-el text-el--dark" data-aos="fade-up" data-aos-delay="100">
@@ -177,7 +277,7 @@
                             Owner</a></button>
                 </div>
             </article>
-            <article class="el-2" data-aos="fade-up" style="background-image: url('/img/image8.png');"></article> -->
+            <article class="el-2" data-aos="fade-up" style="background-image: url('img/image8.png');"></article> -->
             <article class="el-3 text-el text-el--dark" data-aos="fade-up" data-aos-delay="100">
                 <!-- <span class="text-secondary">Looking for Shifts?</span>  -->
                 <h2 data-aos="zoom-out">Sign Up Today and Get $5 Amazon Credits Immediately</h2>
@@ -190,7 +290,7 @@
                     </div>
                 </div>
             </article>
-            <article class="el-4" data-aos="fade-up" style="background-image: url('/img/image8.png');"></article>
+            <article class="el-4" data-aos="fade-up" style="background-image: url('img/image8.png');"></article>
         </section>
         <section id="home__cost" class="image-section" data-image="image2.png">
             <article class="el-1 text-el" data-aos="fade-up">
@@ -214,6 +314,38 @@
                     rate the temp based on their experience through the convenience of the Shiftable app.</p>
             </article>
         </section>
+
+        <div id="home__costMobile">
+            <div class="el-1 text-el" data-aos="fade-up">
+                <h2 data-aos="zoom-out">Learn about <br> Shiftable<span class="blueDote"></span><span class="orangeDote"></span> </h2>
+                    <p data-aos="zoom-out">Be the first to try it out and experience a simpler, more efficient way to find
+                        top-notch temporary staff. Get early access before the rest of the world catches on.
+                    </p>
+            </div>
+
+            <div class="el-2 text-el aos-init aos-animate" data-aos="fade-up">
+                <h3 data-aos="zoom-out" class="aos-init aos-animate">How do temps get paid?</h3>
+                <p data-aos="zoom-out" class="aos-init aos-animate">Shiftable offers a seamless and transparent temping experience for both dental
+                    practices and temps. Temps can raise invoices and send them directly to the dental practice via the
+                    Shiftable app after their shift, ensuring a fully documented and efficient process for both parties.
+                </p>
+          </div>
+
+
+          <div class="el-2 text-el aos-init aos-animate" data-aos="fade-up">
+            <h3 data-aos="zoom-out" >How do dental practices hire temps?</h3>
+            <p data-aos="zoom-out" >With Shiftable, dental practices can post job and shift requirements with zero
+                upfront costs, and have access to thousands of registered dental temps who can apply based on their
+                preferences. Dental practices can then easily select the best applicant, manage their shifts, and
+                rate the temp based on their experience through the convenience of the Shiftable app.</p>
+      </div>
+
+
+
+
+        </div>
+
+
         <section id="home__specialities" class="image-section" data-image="image9.png">
             <article class="el-1 text-el" data-aos="fade-up">
                 <h2 data-aos="zoom-out">How’s Shiftable different from other temping platforms?</h2>
@@ -243,12 +375,40 @@
             </article>
             <!-- <article class="el-8" data-aos="fade-up"></article> -->
         </section>
+
+        <section id="home__download" >
+            <article class="text-el--dark dFlex justify-space-between align-items-center">
+                <h2>Want to become a member of Shiftable community? Download the app now</h2>
+                <div class="btn-list downloadIcons">
+                        <!-- <a href=""> <img src="img/google-play.png" alt=""></a>
+                        <a href=""> <img src="img/app-store.png" alt=""></a> -->
+                    
+                            <button class="btn btn-secondary" data-aos="zoom-out"><a href="/">Apply Now</a></button>
+                     
+                </div>
+            </article>
+
+     </section>
+     <footer class="footer">
+        <a href="" class="logo">
+                <img src="img/logo-large.svg" width="262" alt="">
+        </a>
+
+        <div class="footer-menu">
+                <a href="">Privacy Policy</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Terms of use</a>
+              
+        </div>
+    </footer>
     </main>
+   
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
             offset: -5,
-            delay: 160
+            delay: 160,
+            disable: 'mobile'
         });
     </script>
     <script src="./js/images.js"></script>

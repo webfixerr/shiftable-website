@@ -22,3 +22,26 @@ tabContainers.forEach(function (tabContainer) {
     });
   });
 });
+
+
+// menu js 
+
+// function myFunction() {
+//   var x = document.getElementById("myLinks");
+//   if (x.classList.add === "show") {
+//     x.classList.add = "hide";
+//   } else {
+//     x.style.display = "show";
+//   }
+// }
+
+function myFunction() {
+var elem = document.getElementById( 'myLinks' );
+//elem.classList.add('show'); // Add class
+//elem.classList.remove('hideMenu'); // Remove class
+elem.classList.toggle('showMenu'); // Add or remove class
+if ( elem.classList.contains('some-third-class') ) { // Check for class
+   
+}
+
+}

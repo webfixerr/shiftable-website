@@ -8,7 +8,7 @@ function minmax(num, min, max) {
 }
 
 sectionList.forEach(function (section) {
-  var imagePath = "/img/" + section.getAttribute("data-image");
+  var imagePath = "img/" + section.getAttribute("data-image");
   var sectionBoundary = section.getBoundingClientRect();
 
   for (var i = 0; i < section.children.length; i++) {
