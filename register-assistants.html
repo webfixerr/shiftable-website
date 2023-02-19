@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="register">
+        <div class="container">
+            <a href="/"><img src="img/logo-large.svg" alt="Shiftable" class="logo"></a>
+            <div>
+                <button class="btn btn-primary downloadapp"><span><span class="text">Download App</span> <span><img
+                                src="img/download-icon.png" alt=""></span> </span></button>
+                <button class="btn btn-primary-outline menu-icon"><a href="javascript:void(0);"
+                        onclick="myFunction()"><img src="img/menu-icon.svg" alt=""></a></button>
+                <div id="myLinks" class="menuOuter">
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <section class="register-sec">
+            <div class="textDescp">
+                <h2>Register as Hygienists & Assistants</h2>
+                <p>Get started with SHIFTABLE Today & connect with Reliable Temps and Thriving Dental Practices for
+                    FREE.</p>
+                <h3>Flexibility at your fingertips</h3>
+                <p>Pickup shifts when it makes more sense to you and reliably increase your income.</p>
+                <h3>One platform for everything temping</h3>
+                <p>You get to hire at zero post fees. No Catch. Until 25th June 2023, all shift postings are free. Post
+                    that you’ll have to pay a nominal fee of CAD $10</p>
+                <h3>Connections. Contacts. And Much More.</h3>
+                <p>Connect with your dental community, make contacts and earn more. Get better opportunities from
+                    thriving dental practices.</p>
+            </div>
+
+            <div class="formSec">
+                <h3>Get register as Hygienists & Assistants</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Full Name <span>*</span></label>
+                        <input type="text" placeholder="Aryan Abadeh" class="formInput" />
+                    </div>
+
+                    <div class="groupCol">
+                        <div class="form-group">
+                            <label>Phone Number <span>*</span></label>
+                            <input type="text" placeholder="+1 (647) 948-6676" class="formInput" />
+                        </div>
+                        <div class="form-group">
+                            <label>Pin Code <span>*</span></label>
+                            <input type="text" placeholder="Aryan Abadeh" class="formInput" />
+                        </div>
+                        <div class="form-group">
+                            <label>Gender <span>*</span></label>
+                            <div class="customSelect">
+                                <select class="formInput">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="groupCol">
+                        <div class="form-group">
+                            <label>Date of Birth </label>
+                            <div class="dateFiled">
+                                <span class="calIcon"> <img src="img/calender-icon.svg" alt=""> </span>
+                                <input type="text" placeholder="9 Sept, 1998" class="formInput" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Professional Education <span>*</span></label>
+                            <div class="customSelect">
+                                <select class="formInput">
+                                    <option>Dental Hygienist, RDH</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Year of Graduation</label>
+                            <div class="customSelect">
+                                <select class="formInput">
+                                    <option>1998</option>
+                                    <option>1999</option>
+                                    <option>2000</option>
+                                    <option>2001</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h4 class="noafter">How far can you travel?</h4>
+                    <p>As a temping professional it’s important for you to be able to travel to the clinics. Please
+                        select your prefered range of operations from your Pincode.</p>
+
+                    <div class="form-group">
+                        <div class="radiusRange">
+                            <div>Radius from Pincode </div> 
+                            <div><span id="demo"></span>km Radius</div>
+                    </div>
+                        <input type="range" min="1" max="100" value="23" class="rangeSlider" id="myRange">
+
+                     
+                    </div>
+
+                    <div class="form-footer">
+                        <div class="btn-list">
+
+                            <button class="btn btn-primary btn-primary-outline" data-aos="zoom-out"
+                                data-aos-delay="150"><a href="/">Cancel</a></button>
+                            <button class="btn btn-primary " data-aos="zoom-out"><a href="/">Register Now</a></button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+
+        <section id="home__download">
+            <article class="text-el--dark dFlex justify-space-between align-items-center">
+                <h2>Want to become a member of Shiftable community? Download the app now</h2>
+                <div class="btn-list downloadIcons">
+                    <!-- <a href=""> <img src="img/google-play.png" alt=""></a>
+                        <a href=""> <img src="img/app-store.png" alt=""></a> -->
+
+                    <button class="btn btn-secondary" data-aos="zoom-out"><a href="/">Apply Now</a></button>
+
+                </div>
+            </article>
+
+        </section>
+        <footer class="footer">
+            <a href="" class="logo">
+                <img src="img/logo-large.svg" width="262" alt="">
+            </a>
+
+            <div class="footer-menu">
+                <a href="">Privacy Policy</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Terms of use</a>
+
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: -5,
+            delay: 160,
+            disable: 'mobile'
+        });
+    </script>
+    <script src="./js/images.js"></script>
+    <script src="./js/tabs.js"></script>
+</body>
+
+</html>

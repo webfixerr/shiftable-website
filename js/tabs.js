@@ -35,6 +35,9 @@ tabContainers.forEach(function (tabContainer) {
 //   }
 // }
 
+
+// menu js 
+
 function myFunction() {
 var elem = document.getElementById( 'myLinks' );
 //elem.classList.add('show'); // Add class
@@ -44,4 +47,14 @@ if ( elem.classList.contains('some-third-class') ) { // Check for class
    
 }
 
+}
+
+// range slider 
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
 }
