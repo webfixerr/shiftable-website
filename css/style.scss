@@ -893,7 +893,7 @@ ul.cards {
       &:after{
         content: '';
         position: fixed;
-        right: 0;
+        right: 0; 
         top: 116px;
         background-color: rgba(59,130,246,0.5);
         height: calc(100vh - 116px);
