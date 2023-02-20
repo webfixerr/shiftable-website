@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shiftable | Dental Professional Registration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
@@ -55,22 +54,26 @@
                 <form>
                     <div class="form-group">
                         <label>Full Name <span>*</span></label>
-                        <input type="text" placeholder="Aryan Abadeh" class="formInput" />
+                        <input type="text" placeholder="Aryan Abadeh" name="name" class="formInput" />
+                    </div>
+                    <div class="form-group">
+                        <label>Email <span>*</span></label>
+                        <input type="email" placeholder="siddhant@webfixerr.com" name="name" class="formInput" />
                     </div>
 
                     <div class="groupCol">
                         <div class="form-group">
                             <label>Phone Number <span>*</span></label>
-                            <input type="text" placeholder="+1 (647) 948-6676" class="formInput" />
+                            <input type="text" placeholder="+1 (647) 948-6676" name="phone" class="formInput" />
                         </div>
                         <div class="form-group">
                             <label>Pin Code <span>*</span></label>
-                            <input type="text" placeholder="Aryan Abadeh" class="formInput" />
+                            <input type="text" placeholder="Aryan Abadeh" name="pincode" class="formInput" />
                         </div>
                         <div class="form-group">
                             <label>Gender <span>*</span></label>
                             <div class="customSelect">
-                                <select class="formInput">
+                                <select class="formInput" name="gender">
                                     <option>Male</option>
                                     <option>Female</option>
                                 </select>
@@ -83,13 +86,13 @@
                             <label>Date of Birth </label>
                             <div class="dateFiled">
                                 <span class="calIcon"> <img src="img/calender-icon.svg" alt=""> </span>
-                                <input type="text" placeholder="9 Sept, 1998" class="formInput" />
+                                <input type="date" placeholder="9 Sept, 1998" class="formInput" name="dob" />
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Professional Education <span>*</span></label>
                             <div class="customSelect">
-                                <select class="formInput">
+                                <select class="formInput" name="education">
                                     <option>Dental Hygienist, RDH</option>
 
                                 </select>
@@ -99,7 +102,7 @@
                         <div class="form-group">
                             <label>Year of Graduation</label>
                             <div class="customSelect">
-                                <select class="formInput">
+                                <select class="formInput" name="graduationYear">
                                     <option>1998</option>
                                     <option>1999</option>
                                     <option>2000</option>
@@ -116,20 +119,21 @@
 
                     <div class="form-group">
                         <div class="radiusRange">
-                            <div>Radius from Pincode </div> 
+                            <div>Radius from Pincode </div>
                             <div><span id="demo"></span>km Radius</div>
-                    </div>
-                        <input type="range" min="1" max="100" value="23" class="rangeSlider" id="myRange">
+                        </div>
+                        <input type="range" min="1" max="100" value="23" class="rangeSlider" name="radius" id="myRange">
 
-                     
+
                     </div>
 
                     <div class="form-footer">
                         <div class="btn-list">
 
-                            <button class="btn btn-primary btn-primary-outline" data-aos="zoom-out"
-                                data-aos-delay="150"><a href="/">Cancel</a></button>
-                            <button class="btn btn-primary " data-aos="zoom-out"><a href="/">Register Now</a></button>
+                            <button class="btn btn-primary btn-primary-outline" data-aos="zoom-out" data-aos-delay="150"
+                                type="reset"><a>Cancel</a></button>
+                            <button class="btn btn-primary " data-aos="zoom-out" type="submit"><a>Register
+                                    Now</a></button>
                         </div>
                     </div>
 
@@ -173,8 +177,8 @@
             disable: 'mobile'
         });
     </script>
-    <script src="./js/images.js"></script>
-    <script src="./js/tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/registerProfessional.js"></script>
 </body>
 
 </html>
