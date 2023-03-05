@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <nav class="register">
+    <nav  id="myHeader" class="register header">
         <div class="container">
             <a href="/"><img src="img/logo-large.svg" alt="Shiftable" class="logo"></a>
             <div>
@@ -50,25 +50,25 @@
             </div>
 
             <div class="formSec">
-                <h3>Get register as Hygienists & Assistants</h3>
+                <h3>Register as a Dental Hygienists & Assistants</h3>
                 <form>
                     <div class="form-group">
                         <label>Full Name <span>*</span></label>
-                        <input type="text" placeholder="Aryan Abadeh" name="name" class="formInput" />
+                        <input type="text" placeholder="John Doe" name="name" class="formInput" />
                     </div>
                     <div class="form-group">
                         <label>Email <span>*</span></label>
-                        <input type="email" placeholder="siddhant@webfixerr.com" name="name" class="formInput" />
+                        <input type="email" placeholder="name@company.com" name="name" class="formInput" />
                     </div>
 
                     <div class="groupCol">
                         <div class="form-group">
                             <label>Phone Number <span>*</span></label>
-                            <input type="text" placeholder="+1 (647) 948-6676" name="phone" class="formInput" />
+                            <input type="text" placeholder="+1 (xxx) xxx-xxxx" name="phone" class="formInput" />
                         </div>
                         <div class="form-group">
                             <label>Pin Code <span>*</span></label>
-                            <input type="text" placeholder="Aryan Abadeh" name="pincode" class="formInput" />
+                            <input type="text" placeholder="1234" name="pincode" class="formInput" />
                         </div>
                         <div class="form-group">
                             <label>Gender <span>*</span></label>
@@ -93,7 +93,12 @@
                             <label>Professional Education <span>*</span></label>
                             <div class="customSelect">
                                 <select class="formInput" name="education">
-                                    <option>Dental Hygienist, RDH</option>
+                                    <option>Dental Assistant Level 1 </option>
+                                    <option>Dental Assistant Level 2 </option>
+                                    <option>Registered Dental Hygienist, RDH </option>
+                                    <option>Registered Dental Technologist, RDT  </option>
+                                    <option>Restorative Registered Dental Hygienist, RRDH   </option>
+                                    <option>Others  </option>
 
                                 </select>
                             </div>
@@ -119,7 +124,7 @@
 
                     <div class="form-group">
                         <div class="radiusRange">
-                            <div>Radius from Pincode </div>
+                            <div>Radius from Postal Code </div>
                             <div><span id="demo"></span>km Radius</div>
                         </div>
                         <input type="range" min="1" max="100" value="23" class="rangeSlider" name="radius" id="myRange">
@@ -146,10 +151,11 @@
             <article class="text-el--dark dFlex justify-space-between align-items-center">
                 <h2>Want to become a member of Shiftable community? Download the app now</h2>
                 <div class="btn-list downloadIcons">
-                    <!-- <a href=""> <img src="img/google-play.png" alt=""></a>
-                        <a href=""> <img src="img/app-store.png" alt=""></a> -->
+                    <a href=""> <img src="img/google-play.png" alt=""></a>
+                        <a href=""> <img src="img/app-store.png" alt=""></a>
 
-                    <button class="btn btn-secondary" data-aos="zoom-out"><a href="/">Apply Now</a></button>
+                    <!-- <button class="btn btn-secondary" data-aos="zoom-out"><a href="/register-practice.html">Apply
+                            Now</a></button> -->
 
                 </div>
             </article>
@@ -157,7 +163,7 @@
         </section>
         <footer class="footer">
             <a href="" class="logo">
-                <img src="img/logo-large.svg" width="262" alt="">
+                <img src="img/logo-large.svg" width="230" alt="">
             </a>
 
             <div class="footer-menu">
@@ -179,6 +185,22 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/registerProfessional.js"></script>
+    <script>
+            // header sticky
+window.onscroll = function() {stickyHeader()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+    </script>
 </body>
 
 </html>

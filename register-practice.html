@@ -12,11 +12,11 @@
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <nav class="register">
+    <nav id="myHeader" class="register header">
         <div class="container">
             <a href="/"><img src="img/logo-large.svg" alt="Shiftable" class="logo"></a>
             <div>
@@ -37,15 +37,15 @@
 
         <section class="register-sec">
             <div class="textDescp">
-                <h2>Register as Clinic Owner</h2>
-                <p>Get started with SHIFTABLE Today & connect with Reliable Temps and Thriving Dental Practices for
+                <h2>Register as a Clinic Owner</h2>
+                <p>Get started with Shiftable Today and connect with reliable Temps and Thriving Dental Practices for
                     FREE.</p>
                 <h3>Quickly hire Temps</h3>
-                <p>Substitute your workload with professional temps at a few taps of the app. Zero waiting. Zero Hassle.
+                <p>Substitute your workload with professional temps at a few taps of the app. <br> Zero waiting. Zero Hassle.
                     Zero Guesswork.</p>
-                <h3>No Upfront Fees, Contracts, or Minimums</h3>
+                <h3>No Upfront Fees, Contracts, <br> or Minimums</h3>
                 <p>An easy-to-use single app for all your shifts, schedules, and even raising invoices.</p>
-                <h3>Reliability Checked and much more...</h3>
+                <h3>Accountability Guaranteed and much more...</h3>
                 <p>We hold the temping professionals accountable. That means no no-showups or unreliable temps. And a
                     more trustworthy, transparent process for you.</p>
             </div>
@@ -55,21 +55,21 @@
                 <form>
                     <div class="form-group">
                         <label>Full Name <span>*</span></label>
-                        <input type="text" placeholder="Aryan Abadeh" name="name" class="formInput" />
+                        <input type="text" placeholder="John Doe" name="name" class="formInput" />
                     </div>
                     <div class="form-group">
                         <label>Email <span>*</span></label>
-                        <input type="email" placeholder="kumarmohit367@gmail.com" name="email" class="formInput" />
+                        <input type="email" placeholder="name@company.com" name="email" class="formInput" />
                     </div>
 
                     <div class="groupCol">
                         <div class="form-group">
                             <label>Phone Number <span>*</span></label>
-                            <input type="text" name="phone" placeholder="+1 (647) 948-6676" class="formInput" />
+                            <input type="text" name="phone" placeholder="+1 (xxx) xxx-xxxx"  class="formInput" />
                         </div>
                         <div class="form-group">
                             <label>Pin Code <span>*</span></label>
-                            <input type="text" name="pincode" placeholder="Aryan Abadeh" class="formInput" />
+                            <input type="text" name="pincode" placeholder="1234" class="formInput" />
                         </div>
                         <div class="form-group">
                             <label>Gender <span>*</span></label>
@@ -99,27 +99,27 @@
 
                     <div class="form-group">
                         <label>Clinic Name</label>
-                        <input type="text" name="clinicName" placeholder="Aryan Abadeh" class="formInput" />
+                        <input type="text" name="clinicName" placeholder="Jhon's Dental Clinic" class="formInput" />
                     </div>
                     <div class="form-group">
                         <label>Address <span>*</span></label>
                         <input type="text" name="clinicAddress"
-                            placeholder="Unit 101 - 332 Sheppard Ave. E Toronto, Ontario" class="formInput" />
+                            placeholder="123 Street" class="formInput" />
                     </div>
 
                     <div class="groupCol">
 
                         <div class="form-group">
                             <label>Pin Code <span>*</span></label>
-                            <input type="text" name="clinicPincode" placeholder="M2N 3B4" class="formInput" />
+                            <input type="text" name="clinicPincode" placeholder="1234" class="formInput" />
                         </div>
                         <div class="form-group">
                             <label>Phone Number <span>*</span></label>
-                            <input type="text" name="clinicPhone" placeholder="+1 (647) 948-6676" class="formInput" />
+                            <input type="text" name="clinicPhone" placeholder="+1 (xxx) xxx-xxxx"  class="formInput" />
                         </div>
                         <div class="form-group">
                             <label>Email <span>*</span></label>
-                            <input type="text" name="clinicEmail" placeholder="kumarmohit367@gmail.com"
+                            <input type="text" name="clinicEmail" placeholder="name@company.com"
                                 class="formInput" />
                         </div>
                     </div>
@@ -128,7 +128,7 @@
 
                         <div class="form-group col-2">
                             <label>Website</label>
-                            <input type="text" name="clinicWebsite" placeholder="M2N 3B4" class="formInput" />
+                            <input type="text" name="clinicWebsite" placeholder="company.com" class="formInput" />
                         </div>
 
                     </div>
@@ -139,8 +139,12 @@
                             <label>Avg. Recall (i)</label>
                             <div class="customSelect">
                                 <select class="formInput" name="recall">
-                                    <option>50 Mins</option>
+                                    <option>30 Mins</option>
                                     <option>40 Mins</option>
+                                    <option>50 Mins</option>
+                                    <option>60 Mins</option>
+                                    <option>70 Mins</option>
+                                 
                                 </select>
                             </div>
                         </div>
@@ -148,16 +152,25 @@
                             <label>Software you use</label>
                             <div class="customSelect">
                                 <select class="formInput" name="software">
+                                    <option>AbelDent</option>
+                                    <option>Curve Dental </option>
                                     <option>Dentrix</option>
-
-                                </select>
+                                    <option>EagleSoft</option>
+                                    <option>Open Dental </option>
+                                    <option>Paradigm</option>
+                                    <option>Tracker</option>
+                                    <option>Other</option>
+                             </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Radiography</label>
                             <div class="customSelect">
                                 <select class="formInput" name="radiography">
-                                    <option>Phosphour Plates</option>
+                                    <option>Film</option>
+                                    <option>Digital sensors </option>
+                                    <option>Phosphor Plates </option>
+                                   
 
                                 </select>
                             </div>
@@ -168,8 +181,11 @@
                             <label>Ultrasonic</label>
                             <div class="customSelect">
                                 <select class="formInput" name="ultrasonic">
-                                    <option>50 Mins</option>
-                                    <option>40 Mins</option>
+                                    <option>Piezo</option>
+                                    <option>Cavitron</option>
+                                    <option>Both </option>
+                                    <option>None</option>
+                                 
                                 </select>
                             </div>
                         </div>
@@ -177,7 +193,8 @@
                             <label>Charting</label>
                             <div class="customSelect">
                                 <select class="formInput" name="charting">
-                                    <option>Dentrix</option>
+                                    <option>Digital</option>
+                                    <option>Paper-Based </option>
 
                                 </select>
                             </div>
@@ -186,7 +203,8 @@
                             <label>Lunch Time</label>
                             <div class="customSelect">
                                 <select class="formInput" name="lunchTime">
-                                    <option>Phosphour Plates</option>
+                                    <option>00:00</option>
+                                    <option>00:00</option>
 
                                 </select>
                             </div>
@@ -198,7 +216,12 @@
                             <label>Parking Availability</label>
                             <div class="customSelect">
                                 <select class="formInput" name="parking">
-                                    <option>Pay Parking @ Public Lot</option>
+                                    <option>Parking Free On-Site</option>
+                                    <option>Reimbursed Parking </option>
+                                    <option>Parking Paid On-Site </option>
+                                    <option>Street Parking </option>
+                                    <option>No Parking  </option>
+                                    
 
                                 </select>
                             </div>
@@ -283,10 +306,11 @@
             <article class="text-el--dark dFlex justify-space-between align-items-center">
                 <h2>Want to become a member of Shiftable community? Download the app now</h2>
                 <div class="btn-list downloadIcons">
-                    <!-- <a href=""> <img src="img/google-play.png" alt=""></a>
-                        <a href=""> <img src="img/app-store.png" alt=""></a> -->
+                    <a href=""> <img src="img/google-play.png" alt=""></a>
+                        <a href=""> <img src="img/app-store.png" alt=""></a>
 
-                    <button class="btn btn-secondary" data-aos="zoom-out"><a>Apply Now</a></button>
+                    <!-- <button class="btn btn-secondary" data-aos="zoom-out"><a href="/register-practice.html">Apply
+                            Now</a></button> -->
 
                 </div>
             </article>
@@ -294,7 +318,7 @@
         </section>
         <footer class="footer">
             <a href="" class="logo">
-                <img src="img/logo-large.svg" width="262" alt="">
+                <img src="img/logo-large.svg" width="230" alt="">
             </a>
 
             <div class="footer-menu">
@@ -316,6 +340,22 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/registerClinic.js"></script>
+    <script>
+        // header sticky
+window.onscroll = function() {stickyHeader()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function stickyHeader() {
+if (window.pageYOffset > sticky) {
+header.classList.add("sticky");
+} else {
+header.classList.remove("sticky");
+}
+}
+
+</script>
 </body>
 
 </html>

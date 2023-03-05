@@ -36,6 +36,20 @@ tabContainers.forEach(function (tabContainer) {
 // }
 
 
+// header sticky
+window.onscroll = function() {stickyHeader()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
 // menu js 
 
 function myFunction() {
@@ -97,4 +111,3 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
-
