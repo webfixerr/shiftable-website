@@ -27,6 +27,8 @@ function setupImages() {
   });
 }
 
-window.onresize = setupImages();
+window.onresize = function () {
+  location.reload();
+};
 
 setupImages();
