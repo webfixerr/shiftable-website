@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
-    <nav  id="myHeader" class="register header">
+    <nav id="myHeader" class="register header">
         <div class="container">
             <a href="/"><img src="img/logo-large.svg" alt="Shiftable" class="logo"></a>
             <div>
@@ -96,9 +96,9 @@
                                     <option>Dental Assistant Level 1 </option>
                                     <option>Dental Assistant Level 2 </option>
                                     <option>Registered Dental Hygienist, RDH </option>
-                                    <option>Registered Dental Technologist, RDT  </option>
-                                    <option>Restorative Registered Dental Hygienist, RRDH   </option>
-                                    <option>Others  </option>
+                                    <option>Registered Dental Technologist, RDT </option>
+                                    <option>Restorative Registered Dental Hygienist, RRDH </option>
+                                    <option>Others </option>
 
                                 </select>
                             </div>
@@ -152,7 +152,7 @@
                 <h2>Want to become a member of Shiftable community? Download the app now</h2>
                 <div class="btn-list downloadIcons">
                     <a href=""> <img src="img/google-play.png" alt=""></a>
-                        <a href=""> <img src="img/app-store.png" alt=""></a>
+                    <a href=""> <img src="img/app-store.png" alt=""></a>
 
                     <!-- <button class="btn btn-secondary" data-aos="zoom-out"><a href="/register-practice.html">Apply
                             Now</a></button> -->
@@ -186,19 +186,19 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/registerProfessional.js"></script>
     <script>
-            // header sticky
-window.onscroll = function() {stickyHeader()};
+        // header sticky
+        window.onscroll = function () { stickyHeader() };
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
 
-function stickyHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
 
     </script>
 </body>

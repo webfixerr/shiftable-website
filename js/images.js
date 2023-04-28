@@ -1,5 +1,3 @@
-var sectionList = document.querySelectorAll(".image-section");
-
 function minmax(num, min, max) {
   var MIN = min || 1;
   var MAX = max || 20;
@@ -7,18 +5,28 @@ function minmax(num, min, max) {
   return Math.min(Math.max(parsed, MIN), MAX);
 }
 
-sectionList.forEach(function (section) {
-  var imagePath = "img/" + section.getAttribute("data-image");
-  var sectionBoundary = section.getBoundingClientRect();
+function setupImages() {
+  console.log("Images resized");
 
-  for (var i = 0; i < section.children.length; i++) {
-    var article = section.children[i];
-    var articleBoundary = article.getBoundingClientRect();
-    var top = sectionBoundary.top - articleBoundary.top;
-    var left = sectionBoundary.left - articleBoundary.left;
+  var sectionList = document.querySelectorAll(".image-section");
 
-    if (article.getAttribute("data-aos") === "fade-up") top += 100;
+  sectionList.forEach(function (section) {
+    var imagePath = "img/" + section.getAttribute("data-image");
+    var sectionBoundary = section.getBoundingClientRect();
 
-    article.innerHTML += `<img src="${imagePath}" class="article__bg" style="top:${top}px;left:${left}px;">`;
-  }
-});
+    for (var i = 0; i < section.children.length; i++) {
+      var article = section.children[i];
+      var articleBoundary = article.getBoundingClientRect();
+      var top = sectionBoundary.top - articleBoundary.top;
+      var left = sectionBoundary.left - articleBoundary.left;
+
+      if (article.getAttribute("data-aos") === "fade-up") top += 100;
+
+      article.innerHTML += `<img src="${imagePath}" class="article__bg" style="top:${top}px;left:${left}px;">`;
+    }
+  });
+}
+
+window.onresize = setupImages();
+
+setupImages();
