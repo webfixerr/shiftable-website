@@ -31,10 +31,9 @@ function setupImages() {
 }
 
 window.onresize = function () {
-  // if (screen.availWidth != initWidth || screen.availHeight != initHeight) {
-  alert("Resize triggered");
-  // location.reload();
-  // }
+  if (screen.availWidth != initWidth || screen.availHeight != initHeight) {
+    location.reload();
+  }
 };
 
 setupImages();
