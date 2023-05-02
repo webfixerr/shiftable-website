@@ -1,5 +1,5 @@
-var initWidth = window.innerWidth;
-var initHeight = window.innerHeight;
+var initWidth = window.outerWidth;
+var initHeight = window.outerHeight;
 
 function minmax(num, min, max) {
   var MIN = min || 1;
@@ -31,8 +31,9 @@ function setupImages() {
 }
 
 window.onresize = function () {
-  if (window.innerWidth != initWidth || window.innerHeight != initHeight) {
-    location.reload();
+  if (window.outerWidth != initWidth || window.outerHeight != initHeight) {
+    // location.reload();
+    alert("Resize triggered");
   }
 };
 
