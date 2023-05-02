@@ -50,7 +50,8 @@ window.onresize = function (e) {
     if (Math.abs(gHeight - tempHeight) > 100 || gWidth != tempWidth) {
       gWidth = tempWidth;
       gHeight = tempHeight;
-      alert("Resize triggered");
+      // alert("Resize triggered");
+      location.reload();
     }
   }
 };
