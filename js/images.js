@@ -1,3 +1,6 @@
+var initWidth = screen.availWidth;
+var initHeight = screen.availHeight;
+
 function minmax(num, min, max) {
   var MIN = min || 1;
   var MAX = max || 20;
@@ -28,7 +31,10 @@ function setupImages() {
 }
 
 window.onresize = function () {
-  location.reload();
+  if (screen.availWidth != initWidth || screen.availHeight != initHeight) {
+    alert("Resize triggered");
+    // location.reload();
+  }
 };
 
 setupImages();
