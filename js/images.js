@@ -1,5 +1,11 @@
-var initWidth = screen.width;
-var initHeight = screen.height;
+var gWidth =
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+var gHeight =
+  window.innerHeight ||
+  document.documentElement.clientHeight ||
+  document.body.clientHeight;
 
 function minmax(num, min, max) {
   var MIN = min || 1;
@@ -30,10 +36,22 @@ function setupImages() {
   });
 }
 
-window.onresize = function () {
-  if (screen.width != initWidth || screen.height != initHeight) {
-    // location.reload();
-    alert("Resize triggered");
+window.onresize = function (e) {
+  if (e.type == "resize") {
+    var tempHeight =
+      window.innerHeight ||
+      document.documentElement.clientHeight ||
+      document.body.clientHeight;
+    var tempWidth =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+
+    if (Math.abs(gHeight - tempHeight) > 100 || gWidth != tempWidth) {
+      gWidth = tempWidth;
+      gHeight = tempHeight;
+      alert("Resize triggered");
+    }
   }
 };
 
